@@ -28,19 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dgwStudents = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwStudents)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgwStudents
+            // 
+            this.dgwStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwStudents.Location = new System.Drawing.Point(46, 36);
+            this.dgwStudents.Name = "dgwStudents";
+            this.dgwStudents.RowHeadersWidth = 51;
+            this.dgwStudents.RowTemplate.Height = 24;
+            this.dgwStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
+            this.dgwStudents.Size = new System.Drawing.Size(943, 428);
+            this.dgwStudents.TabIndex = 0;
             // 
             // FrmStudents
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dgwStudents);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmStudents";
             this.Text = "FrmStudents";
+            this.Load += new System.EventHandler(this.FrmStudents_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgwStudents;
     }
 }

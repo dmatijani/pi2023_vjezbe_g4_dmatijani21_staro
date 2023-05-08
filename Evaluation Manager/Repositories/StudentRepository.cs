@@ -54,11 +54,11 @@ namespace Evaluation_Manager.Repositories
 
             var student = new Student
             {
-                Id = id;
-                FirstName = firstName;
-                LastName = lastName;
-                Grade = grade;
-            }
+                Id = id,
+                FirstName = firstName,
+                LastName = lastName,
+                Grade = grade
+            };
 
             return student;
         }
